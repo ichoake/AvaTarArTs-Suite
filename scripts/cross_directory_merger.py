@@ -41,20 +41,20 @@ class Colors:
 
 class CrossDirectoryMerger:
     """Merge multiple directories into master, removing cross-dir duplicates"""
-    
-    def __init__(self, master_dir: str, source_dirs: List[str], 
+
+    def __init__(self, master_dir: str, source_dirs: List[str],
                  user_scripts_only: bool = True, dry_run: bool = True):
         self.master_dir = Path(master_dir)
         self.source_dirs = [Path(d) for d in source_dirs]
         self.user_scripts_only = user_scripts_only
         self.dry_run = dry_run
-        
+
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         self.backup_dir = Path(f"/Users/steven/Documents/merge_backup_{timestamp}")
-        
+
         self.file_inventory = {}  # hash -> list of file info
         self.merge_plan = []
-        
+
         self.stats = {
             'master_files': 0,
             'source_files': 0,
@@ -62,7 +62,7 @@ class CrossDirectoryMerger:
             'files_to_merge': 0,
             'files_skipped': 0,
         }
-    
+
     def calc_hash(self, filepath: Path) -> str:
         """Calculate SHA-256 hash"""
         try:
@@ -73,113 +73,113 @@ class CrossDirectoryMerger:
             return hasher.hexdigest()
         except:
             return "ERROR"
-    
+
     def is_user_script(self, filepath: Path) -> bool:
         """Quick check if file is user script"""
-        
+
         name_lower = filepath.stem.lower()
-        
+
         # Exclude obvious library test files
-        library_patterns = ['test_pandas', 'test_numpy', 'test_scipy', 
+        library_patterns = ['test_pandas', 'test_numpy', 'test_scipy',
                            'test_array', 'test_scalar', 'test_dtype']
-        
+
         if any(pattern in name_lower for pattern in library_patterns):
             return False
-        
+
         # Include if has custom indicators in name
-        custom_indicators = ['instagram', 'youtube', 'leonardo', 'openai', 
+        custom_indicators = ['instagram', 'youtube', 'leonardo', 'openai',
                             'bot', 'scraper', 'downloader', 'uploader',
                             'organizer', 'automation', 'generator']
-        
+
         if any(indicator in name_lower for indicator in custom_indicators):
             return True
-        
+
         # Default to include (we'll be conservative)
         return True
-    
+
     def scan_directories(self):
         """Scan all directories and build inventory"""
-        
+
         print(f"\n{Colors.CYAN}{Colors.BOLD}{'='*80}")
         print(f"🔍 SCANNING DIRECTORIES")
         print(f"{'='*80}{Colors.END}\n")
-        
+
         # Scan master directory
         print(f"{Colors.CYAN}📁 Master: {self.master_dir}{Colors.END}")
         master_files = list(self.master_dir.rglob("*.py"))
         master_files = [f for f in master_files if 'backup' not in str(f)]
-        
+
         if self.user_scripts_only:
             master_files = [f for f in master_files if self.is_user_script(f)]
-        
+
         for filepath in master_files:
             file_hash = self.calc_hash(filepath)
             if file_hash != "ERROR":
                 if file_hash not in self.file_inventory:
                     self.file_inventory[file_hash] = []
-                
+
                 self.file_inventory[file_hash].append({
                     'path': filepath,
                     'source': 'MASTER',
                     'size': filepath.stat().st_size,
                     'modified': filepath.stat().st_mtime,
                 })
-        
+
         self.stats['master_files'] = len(master_files)
         print(f"  Found {len(master_files)} files\n")
-        
+
         # Scan source directories
         for source_dir in self.source_dirs:
             print(f"{Colors.CYAN}📁 Source: {source_dir}{Colors.END}")
-            
+
             if not source_dir.exists():
                 print(f"  {Colors.YELLOW}⚠️  Directory not found, skipping{Colors.END}\n")
                 continue
-            
+
             source_files = list(source_dir.rglob("*.py"))
-            
+
             if self.user_scripts_only:
                 source_files = [f for f in source_files if self.is_user_script(f)]
-            
+
             for filepath in source_files:
                 file_hash = self.calc_hash(filepath)
                 if file_hash != "ERROR":
                     if file_hash not in self.file_inventory:
                         self.file_inventory[file_hash] = []
-                    
+
                     self.file_inventory[file_hash].append({
                         'path': filepath,
                         'source': source_dir.name,
                         'size': filepath.stat().st_size,
                         'modified': filepath.stat().st_mtime,
                     })
-            
+
             self.stats['source_files'] += len(source_files)
             print(f"  Found {len(source_files)} files\n")
-    
+
     def create_merge_plan(self):
         """Create plan to merge unique files into master"""
-        
+
         print(f"{Colors.CYAN}{Colors.BOLD}{'='*80}")
         print(f"🧠 CREATING MERGE PLAN")
         print(f"{'='*80}{Colors.END}\n")
-        
+
         duplicates_across_dirs = 0
-        
+
         for file_hash, instances in self.file_inventory.items():
             if len(instances) > 1:
                 # Check if duplicates span multiple directories
                 sources = set(inst['source'] for inst in instances)
                 if len(sources) > 1:
                     duplicates_across_dirs += 1
-                    
+
                     # Find if master has this file
                     has_master = any(inst['source'] == 'MASTER' for inst in instances)
-                    
+
                     if not has_master:
                         # Choose best version to merge into master
                         best = max(instances, key=lambda x: (x['modified'], x['size']))
-                        
+
                         self.merge_plan.append({
                             'action': 'merge',
                             'file': best['path'],
@@ -187,7 +187,7 @@ class CrossDirectoryMerger:
                             'hash': file_hash[:16],
                             'duplicates': [inst['path'] for inst in instances if inst != best],
                         })
-                        
+
                         self.stats['files_to_merge'] += 1
                     else:
                         # Master already has it, skip sources
@@ -204,29 +204,29 @@ class CrossDirectoryMerger:
                         'duplicates': [],
                     })
                     self.stats['files_to_merge'] += 1
-        
+
         self.stats['duplicates_found'] = duplicates_across_dirs
-        
+
         print(f"{Colors.GREEN}✅ Plan created!{Colors.END}\n")
         print(f"  Cross-directory duplicates: {Colors.YELLOW}{duplicates_across_dirs}{Colors.END}")
         print(f"  Files to merge: {Colors.CYAN}{self.stats['files_to_merge']}{Colors.END}")
         print(f"  Files to skip (already in master): {Colors.YELLOW}{self.stats['files_skipped']}{Colors.END}")
-    
+
     def execute_merge(self):
         """Execute the merge plan"""
-        
+
         print(f"\n{Colors.CYAN}{Colors.BOLD}{'='*80}")
         print(f"🔄 EXECUTING MERGE")
         print(f"{'='*80}{Colors.END}\n")
-        
+
         print(f"{Colors.YELLOW}Mode: {'DRY RUN' if self.dry_run else 'LIVE MERGE'}{Colors.END}\n")
-        
+
         if not self.dry_run:
             self.backup_dir.mkdir(parents=True, exist_ok=True)
-        
+
         for idx, item in enumerate(self.merge_plan[:20], 1):  # Show first 20
             source_file = item['file']
-            
+
             # Determine target path in master
             # Try to preserve relative structure if possible
             try:
@@ -235,14 +235,14 @@ class CrossDirectoryMerger:
             except:
                 # Just use filename
                 target_path = self.master_dir / source_file.name
-            
+
             print(f"{Colors.BOLD}[{idx}/{len(self.merge_plan)}]{Colors.END}")
             print(f"  From: {Colors.CYAN}{source_file.relative_to(source_file.parent.parent.parent)}{Colors.END}")
             print(f"  To:   {Colors.GREEN}{target_path.relative_to(self.master_dir)}{Colors.END}")
-            
+
             if item['duplicates']:
                 print(f"  Duplicates: {len(item['duplicates'])} (will be skipped)")
-            
+
             if not self.dry_run:
                 try:
                     target_path.parent.mkdir(parents=True, exist_ok=True)
@@ -253,17 +253,17 @@ class CrossDirectoryMerger:
             else:
                 print(f"  {Colors.YELLOW}[DRY RUN] Would merge{Colors.END}")
             print()
-        
+
         if len(self.merge_plan) > 20:
             print(f"... and {len(self.merge_plan) - 20} more files to merge")
-    
+
     def generate_report(self):
         """Generate merge report"""
-        
+
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         report_file = self.master_dir / f"CROSS_DIRECTORY_MERGE_REPORT_{timestamp}.md"
         csv_file = self.master_dir / f"merge_mapping_{timestamp}.csv"
-        
+
         with open(report_file, 'w') as f:
             f.write("# 🔄 CROSS-DIRECTORY MERGE REPORT\n\n")
             f.write(f"**Generated:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
@@ -275,7 +275,7 @@ class CrossDirectoryMerger:
             f.write(f"| Cross-Dir Duplicates | {self.stats['duplicates_found']:,} |\n")
             f.write(f"| Files Merged | {self.stats['files_to_merge']:,} |\n")
             f.write(f"| Files Skipped | {self.stats['files_skipped']:,} |\n\n")
-            
+
             # Merge details
             f.write("## 📝 MERGE DETAILS\n\n")
             for item in self.merge_plan[:100]:
@@ -285,12 +285,12 @@ class CrossDirectoryMerger:
                 if item['duplicates']:
                     f.write(f"- **Duplicates:** {len(item['duplicates'])} (skipped)\n")
                 f.write("\n")
-        
+
         # CSV
         with open(csv_file, 'w', newline='') as f:
             writer = csv.writer(f)
             writer.writerow(['File Name', 'Source Directory', 'Hash', 'Duplicates Count', 'Target Path'])
-            
+
             for item in self.merge_plan:
                 writer.writerow([
                     item['file'].name,
@@ -299,13 +299,13 @@ class CrossDirectoryMerger:
                     len(item['duplicates']),
                     str(item['file']),
                 ])
-        
+
         print(f"{Colors.GREEN}✅ Report: {report_file}{Colors.END}")
         print(f"{Colors.GREEN}✅ CSV: {csv_file}{Colors.END}")
-    
+
     def run(self):
         """Run cross-directory merger"""
-        
+
         print(f"{Colors.MAGENTA}{Colors.BOLD}")
         print("╔═══════════════════════════════════════════════════════════════════════════════╗")
         print("║                                                                               ║")
@@ -315,23 +315,23 @@ class CrossDirectoryMerger:
         print("║                                                                               ║")
         print("╚═══════════════════════════════════════════════════════════════════════════════╝")
         print(f"{Colors.END}\n")
-        
+
         print(f"{Colors.CYAN}Master (target): {self.master_dir}{Colors.END}")
         print(f"{Colors.CYAN}Sources to merge:{Colors.END}")
         for src in self.source_dirs:
             print(f"  → {src}")
         print(f"\n{Colors.CYAN}User scripts only: {self.user_scripts_only}{Colors.END}")
         print(f"{Colors.CYAN}Mode: {'DRY RUN' if self.dry_run else 'LIVE'}{Colors.END}\n")
-        
+
         self.scan_directories()
         self.create_merge_plan()
         self.execute_merge()
         self.generate_report()
-        
+
         print(f"\n{Colors.CYAN}{Colors.BOLD}{'='*80}")
         print(f"✅ MERGE COMPLETE!")
         print(f"{'='*80}{Colors.END}\n")
-        
+
         print(f"{Colors.BOLD}📊 STATS:{Colors.END}\n")
         print(f"  Master files: {Colors.CYAN}{self.stats['master_files']:,}{Colors.END}")
         print(f"  Source files: {Colors.CYAN}{self.stats['source_files']:,}{Colors.END}")
@@ -342,7 +342,7 @@ class CrossDirectoryMerger:
 
 def main():
     import argparse
-    
+
     parser = argparse.ArgumentParser(description="🔄 Cross-directory merger")
     parser.add_argument('--master', type=str, required=True, help='Master directory (target)')
     parser.add_argument('--sources', nargs='+', required=True, help='Source directories to merge')
@@ -350,16 +350,16 @@ def main():
                        help='Only merge user scripts (exclude library files)')
     parser.add_argument('--dry-run', action='store_true', default=True, help='Dry run')
     parser.add_argument('--live', action='store_true', help='Execute merge')
-    
+
     args = parser.parse_args()
-    
+
     merger = CrossDirectoryMerger(
         master_dir=args.master,
         source_dirs=args.sources,
         user_scripts_only=args.user_scripts_only,
         dry_run=not args.live
     )
-    
+
     merger.run()
 
 
