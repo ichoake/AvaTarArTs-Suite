@@ -176,6 +176,11 @@ class CodebaseAnalyzer:
 
 
 if __name__ == "__main__":
-    analyzer = CodebaseAnalyzer()
+    import argparse
+    parser = argparse.ArgumentParser(description="Analyze codebase for quality issues")
+    parser.add_argument('--target', type=str, default=".", help='Target directory to analyze')
+    args = parser.parse_args()
+
+    analyzer = CodebaseAnalyzer(args.target)
     analyzer.analyze()
     analyzer.generate_report()

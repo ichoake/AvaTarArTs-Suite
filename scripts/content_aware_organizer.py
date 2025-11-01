@@ -600,9 +600,16 @@ class ParentFolderStructureAnalyzer:
 
 def main():
     """Main execution"""
-    target_dir = "/Users/steven/GitHub/AvaTarArTs-Suite"
+    import argparse
+    parser = argparse.ArgumentParser(description="Content-aware folder structure analysis")
+    parser.add_argument('--target', type=str, default="/Users/steven/GitHub/AvaTarArTs-Suite",
+                       help='Target directory to analyze')
+    parser.add_argument('--depth', type=int, default=6,
+                       help='Maximum folder depth to scan (default: 6)')
+    args = parser.parse_args()
 
-    analyzer = ParentFolderStructureAnalyzer(target_dir)
+    analyzer = ParentFolderStructureAnalyzer(args.target)
+    analyzer.max_depth = args.depth
     analyzer.run()
 
 
