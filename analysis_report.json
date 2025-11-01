@@ -1,7 +1,7 @@
 {
-  "timestamp": "2025-11-01T03:25:23.737868",
-  "total_files": 12232,
-  "python_files": 3517,
+  "timestamp": "2025-11-01T04:06:37.106111",
+  "total_files": 12467,
+  "python_files": 3709,
   "duplicates": [
     "youtube_copy_zombot_images.py",
     "Python/generate_speech 2.py",
@@ -10,9 +10,10 @@
     "folder-file-sorter/organize_albums 14.py",
     "folder-file-sorter/organize_albums 15.py",
     "sorting/youtube_copy_files_with_logging.py",
+    "bare_except_backup_20251101_033421/SpotifyMP3/.history/playlist_20221230180403.py",
+    "bare_except_backup_20251101_033421/videoGenerator/.history/main_20221230233546.py",
     "SpotifyMP3/.history/playlist_20221230180403.py",
     "SpotifyMP3/.history/playlist_20221230180508.py",
-    "SpotifyMP3/.history/playlist_20221230180809.py",
     "SpotifyMP3/.history/playlist_20221230180628.py",
     "SpotifyMP3/.history/playlist_20221230180525.py",
     "_versions/SOCIAL_PLATFORMS/youtube/YTubeDLthumbscopy_2.py",
@@ -24,42 +25,43 @@
     "leonardo/.history/leodown_20250102111003.py",
     "leonardo/.history/process_leonardo_20250102110137.py",
     "leonardo/.history/leodown_20250102105151.py",
-    "leonardo/.history/process_leonardo_20250102110149.py",
-    "leonardo/.history/leodown_20250102105144.py",
     "leonardo/.history/process_leonardo_20250102110441.py",
-    "leonardo/.history/process_leonardo_20250102110148.py",
     "leonardo/.history/process_leonardo_20250102110258.py",
-    "leonardo/.history/leodown_20250102105147.py",
-    "leonardo/.history/process_leonardo_20250102110442.py",
-    "leonardo/.history/process_leonardo_20250102104737.py",
     "leonardo/.history/leodown_20250102105149.py",
-    "leonardo/.history/leodown_20250102111110.py",
     "videoGenerator/.history/main_20221230233546.py",
-    "videoGenerator/.history/main_20221230234008.py",
-    "videoGenerator/.history/main_20221230233748.py",
-    "videoGenerator/.history/main_20221230225837.py",
     "Youtube/.history/NewUpload_20250607131239.py",
     "Youtube/.history/NewUpload_20250607125012.py",
     "Youtube/.history/NewUpload_20250607124910.py",
-    "Youtube/.history/NewUpload_20250607130948.py",
     "Youtube/.history/NewUpload_20250607131031.py",
     "Youtube/.history/NewUpload_20250607131227.py",
     "Youtube/.history/NewUpload_20250607130507.py",
     "Youtube/.history/NewUpload_20250607131212.py",
-    "Youtube/.history/NewUpload_20250607131143.py",
     "Youtube/.history/NewUpload_20250607131221.py",
     "Youtube/.history/NewUpload_20250607131215.py",
     "Youtube/.history/NewUpload_20250607131205.py",
     "Youtube/.history/NewUpload_20250607130440.py",
     "Youtube/.history/NewUpload_20250607131235.py",
-    "Youtube/.history/NewUpload_20250607131201.py",
     "Youtube/.history/NewUpload_20250607131149.py",
     "Youtube/.history/NewUpload_20250607124913.py",
-    "Youtube/.history/NewUpload_20250607131039.py",
     "Youtube/.history/NewUpload_20250607131028.py",
     "Youtube/.history/NewUpload_20250607125040.py",
     "Youtube/youtube-shorts-reddit-scraper/.history/main_20221230223947.py",
-    "Youtube/youtube-shorts-reddit-scraper/.history/main_20221230223427.py"
+    "dedup_backup_20251101_033200/SpotifyMP3/.history/playlist_20221230180809.py",
+    "dedup_backup_20251101_033200/leonardo/.history/process_leonardo_20250102110149.py",
+    "dedup_backup_20251101_033200/leonardo/.history/leodown_20250102105144.py",
+    "dedup_backup_20251101_033200/leonardo/.history/process_leonardo_20250102110148.py",
+    "dedup_backup_20251101_033200/leonardo/.history/leodown_20250102105147.py",
+    "dedup_backup_20251101_033200/leonardo/.history/process_leonardo_20250102110442.py",
+    "dedup_backup_20251101_033200/leonardo/.history/process_leonardo_20250102104737.py",
+    "dedup_backup_20251101_033200/leonardo/.history/leodown_20250102111110.py",
+    "dedup_backup_20251101_033200/videoGenerator/.history/main_20221230234008.py",
+    "dedup_backup_20251101_033200/videoGenerator/.history/main_20221230233748.py",
+    "dedup_backup_20251101_033200/videoGenerator/.history/main_20221230225837.py",
+    "dedup_backup_20251101_033200/Youtube/.history/NewUpload_20250607130948.py",
+    "dedup_backup_20251101_033200/Youtube/.history/NewUpload_20250607131143.py",
+    "dedup_backup_20251101_033200/Youtube/.history/NewUpload_20250607131201.py",
+    "dedup_backup_20251101_033200/Youtube/.history/NewUpload_20250607131039.py",
+    "dedup_backup_20251101_033200/Youtube/youtube-shorts-reddit-scraper/.history/main_20221230223427.py"
   ],
   "issues": {
     "dangerous_functions": [
@@ -74,7 +76,16 @@
       "parse_text.py",
       "nativetypes.py",
       "iplib.py",
+      "bare_except_backup_20251101_033421/crawl.py",
+      "bare_except_backup_20251101_033421/pickleshare.py",
       "Manga-Colorization-FJ/colorizator.py",
+      "bare_except_backup_20251101_033421/_versions/SOCIAL_PLATFORMS/youtube/youtube_19.py",
+      "bare_except_backup_20251101_033421/_versions/DEVELOPMENT/script/script_56.py",
+      "bare_except_backup_20251101_033421/_versions/DEVELOPMENT/testing/intelligent_6.py",
+      "bare_except_backup_20251101_033421/_versions/UTILITIES/misc/console_1.py",
+      "bare_except_backup_20251101_033421/_versions/UTILITIES/file_operations/settings_1.py",
+      "bare_except_backup_20251101_033421/_versions/MEDIA_PROCESSING/image/TelegraphImageDownloader[RUS]_3.py",
+      "bare_except_backup_20251101_033421/TG-MegaBot/plugins/youtube_dl_button.py",
       "Manga-Colorization-FJ/denoising/denoiser.py",
       "_versions/SOCIAL_PLATFORMS/youtube/youtube_8.py",
       "_versions/SOCIAL_PLATFORMS/youtube/youtube_19.py",
@@ -410,6 +421,15 @@
       "AutomatedYoutubeShorts/config.py",
       "AutomatedYoutubeShorts/youtube_generateAudio.py",
       "AutomatedYoutubeShorts/final_video.py",
+      "bare_except_backup_20251101_033421/AskReddit_loop.py",
+      "bare_except_backup_20251101_033421/rename_file.py",
+      "bare_except_backup_20251101_033421/snoopnetworktest.py",
+      "bare_except_backup_20251101_033421/upload.py",
+      "bare_except_backup_20251101_033421/printify_bestseller_fetcher.py",
+      "bare_except_backup_20251101_033421/clipEditor.py",
+      "bare_except_backup_20251101_033421/confcli.py",
+      "bare_except_backup_20251101_033421/configHandler.py",
+      "bare_except_backup_20251101_033421/subredditSentiment_apps.py",
       "Automated Reddit to Youtube Bot/youtube.py",
       "Automated Reddit to Youtube Bot/upload.py",
       "Automated Reddit to Youtube Bot/thumbnail.py",
@@ -548,6 +568,56 @@
       "quiz-talk/quiz329/speech.py",
       "InstagramReportBot/InstaReport/InstaReport/InstaReport/libs/attack.py",
       "InstagramReportBot/InstaReport/InstaReport/InstaReport/libs/utils.py",
+      "bare_except_backup_20251101_033421/Automated Reddit to Youtube Bot/youtube.py",
+      "bare_except_backup_20251101_033421/Automated Reddit to Youtube Bot/upload.py",
+      "bare_except_backup_20251101_033421/redditVideoGenerator/AskReddit_loop.py",
+      "bare_except_backup_20251101_033421/redditVideoGenerator/AskReddit.py",
+      "bare_except_backup_20251101_033421/Twitch-Best-Of/youtube_remove_old_files.py",
+      "bare_except_backup_20251101_033421/InstagramReportBot/InstaReport/InstaReport/InstaReport/libs/attack.py",
+      "bare_except_backup_20251101_033421/FOSS-Voice-Assistant/src/youtube_listener.py",
+      "bare_except_backup_20251101_033421/SpotifyMP3/.history/playlist_20221230180403.py",
+      "bare_except_backup_20251101_033421/TikTok-Compilation-Video-Generator/TikTok Client/Client.py",
+      "bare_except_backup_20251101_033421/Instagram-Mass-report/libs/check_modules.py",
+      "bare_except_backup_20251101_033421/Instagram-Mass-report/libs/attack.py",
+      "bare_except_backup_20251101_033421/_versions/SOCIAL_PLATFORMS/youtube/yt_9.py",
+      "bare_except_backup_20251101_033421/_versions/SOCIAL_PLATFORMS/youtube/yt_34.py",
+      "bare_except_backup_20251101_033421/_versions/SOCIAL_PLATFORMS/youtube/youtube_19.py",
+      "bare_except_backup_20251101_033421/_versions/SOCIAL_PLATFORMS/youtube/scraper_7.py",
+      "bare_except_backup_20251101_033421/_versions/DEVELOPMENT/gui_apps/input_1.py",
+      "bare_except_backup_20251101_033421/_versions/DEVELOPMENT/utils/utils_17.py",
+      "bare_except_backup_20251101_033421/_versions/DEVELOPMENT/utils/utils_11.py",
+      "bare_except_backup_20251101_033421/_versions/DEVELOPMENT/script/script_71.py",
+      "bare_except_backup_20251101_033421/_versions/WEB_SCRAPING/download/main.py_v4.py",
+      "bare_except_backup_20251101_033421/_versions/WEB_SCRAPING/download/scrape_6.py",
+      "bare_except_backup_20251101_033421/_versions/WEB_SCRAPING/api_clients/message_7.py",
+      "bare_except_backup_20251101_033421/_versions/CONTENT_CREATION/nocturne/message_10.py",
+      "bare_except_backup_20251101_033421/_versions/CONTENT_CREATION/nocturne/playlist_7.py",
+      "bare_except_backup_20251101_033421/_versions/UTILITIES/misc/check_21.py",
+      "bare_except_backup_20251101_033421/_versions/UTILITIES/misc/display_8.py",
+      "bare_except_backup_20251101_033421/_versions/UTILITIES/misc/check_34.py",
+      "bare_except_backup_20251101_033421/_versions/UTILITIES/file_operations/unzip_1.py",
+      "bare_except_backup_20251101_033421/_versions/UTILITIES/file_operations/message_6.py",
+      "bare_except_backup_20251101_033421/_versions/MEDIA_PROCESSING/video/twitchClips_1.py",
+      "bare_except_backup_20251101_033421/_versions/MEDIA_PROCESSING/image/clientUI_1.py",
+      "bare_except_backup_20251101_033421/_versions/MEDIA_PROCESSING/convert/convert_20.py",
+      "bare_except_backup_20251101_033421/_versions/MEDIA_PROCESSING/convert/convert_14.py",
+      "bare_except_backup_20251101_033421/_versions/MEDIA_PROCESSING/convert/convert_31.py",
+      "bare_except_backup_20251101_033421/_versions/MEDIA_PROCESSING/convert/convert_32.py",
+      "bare_except_backup_20251101_033421/_versions/MEDIA_PROCESSING/convert/convert_38.py",
+      "bare_except_backup_20251101_033421/Youtube/YoutubeBot/Firefox/YouTubeBot.py",
+      "bare_except_backup_20251101_033421/TG-MegaBot/plugins/generate_screen_shot.py",
+      "bare_except_backup_20251101_033421/TG-MegaBot/plugins/rename_file.py",
+      "bare_except_backup_20251101_033421/TG-MegaBot/plugins/get_external_link.py",
+      "bare_except_backup_20251101_033421/TG-MegaBot/plugins/custom_thumbnail.py",
+      "bare_except_backup_20251101_033421/TG-MegaBot/plugins/youtube_dl_button.py",
+      "bare_except_backup_20251101_033421/TG-MegaBot/plugins/unzip.py",
+      "bare_except_backup_20251101_033421/TG-MegaBot/plugins/convert_to_video.py",
+      "bare_except_backup_20251101_033421/TG-MegaBot/plugins/convert_to_audio.py",
+      "bare_except_backup_20251101_033421/TG-MegaBot/plugins/cb_buttons.py",
+      "bare_except_backup_20251101_033421/TG-MegaBot/helper_funcs/help_uploadbot.py",
+      "bare_except_backup_20251101_033421/reddit-to-instagram-bot/RDT-IG bot/youtube_DLimage.py",
+      "bare_except_backup_20251101_033421/007spam-BOT/libs/instaclient.py",
+      "bare_except_backup_20251101_033421/TwitchCompilationCreator/src/utils.py",
       "comprehensive_docs/sphinx/source/youtube_tool.py",
       "FOSS-Voice-Assistant/src/youtube_listener.py",
       "FOSS-Voice-Assistant/src/setup.py",
@@ -575,7 +645,6 @@
       "igbot/examples/ultimate_schedule/ultimate.py",
       "SpotifyMP3/.history/playlist_20221230180403.py",
       "SpotifyMP3/.history/playlist_20221230180508.py",
-      "SpotifyMP3/.history/playlist_20221230180809.py",
       "SpotifyMP3/.history/playlist_20221230180628.py",
       "SpotifyMP3/.history/playlist_20221230180525.py",
       "TikTok-Compilation-Video-Generator/TikTok Server/database.py",
@@ -774,7 +843,6 @@
       "_versions/DEVELOPMENT/process/proc_28.py",
       "_versions/DEVELOPMENT/process/process_19.py",
       "_versions/DEVELOPMENT/process/proc_17.py",
-      "_versions/DEVELOPMENT/process/process_17.py",
       "_versions/DEVELOPMENT/process/proc_22.py",
       "_versions/WEB_SCRAPING/download/news_api_fetcher_v2.py",
       "_versions/WEB_SCRAPING/download/download_30.py",
@@ -864,9 +932,7 @@
       "_versions/CONTENT_CREATION/leonardo/leodown_8.py",
       "_versions/CONTENT_CREATION/leonardo/2leomotioncopy_2.py",
       "_versions/CONTENT_CREATION/leonardo/universe_3.py",
-      "_versions/CONTENT_CREATION/leonardo/leodown_9.py",
       "_versions/CONTENT_CREATION/leonardo/scraper_6.py",
-      "_versions/CONTENT_CREATION/leonardo/leodown_6.py",
       "_versions/CONTENT_CREATION/nocturne/spotify_1.py",
       "_versions/CONTENT_CREATION/nocturne/scan_6.py",
       "_versions/CONTENT_CREATION/nocturne/message_10.py",
@@ -1121,12 +1187,7 @@
       "leonardo/.history/process_leonardo_20250102104751.py",
       "leonardo/.history/leodown_20250102111003.py",
       "leonardo/.history/leodown_20250102105151.py",
-      "leonardo/.history/process_leonardo_20250102110149.py",
-      "leonardo/.history/leodown_20250102105144.py",
-      "leonardo/.history/leodown_20250102105147.py",
-      "leonardo/.history/process_leonardo_20250102104737.py",
       "leonardo/.history/leodown_20250102105149.py",
-      "leonardo/.history/leodown_20250102111110.py",
       "leonardo/myenv/lib/python3.11/site-packages/idna/package_data.py",
       "leonardo/myenv/lib/python3.11/site-packages/idna/idnadata.py",
       "leonardo/myenv/lib/python3.11/site-packages/idna/codec.py",
@@ -1195,7 +1256,6 @@
       "Youtube/ygpt/utils/videogenerator.py",
       "Youtube/ygpt/utils/textgenerator.py",
       "Youtube/youtube-shorts-reddit-scraper/.history/main_20221230223947.py",
-      "Youtube/youtube-shorts-reddit-scraper/.history/main_20221230223427.py",
       "Youtube/youtube-uploader-main/src/thumbnail.py",
       "Youtube/youtube-uploader-main/src/youtube_tool.py",
       "Youtube/youtube-gpt-content-maker/utils/textgenerator.py",
@@ -1381,8 +1441,18 @@
       "simple-photo-gallery/simplegallery/test/logic/variants/test_google_gallery_logic.py",
       "simple-photo-gallery/simplegallery/test/logic/variants/test_onedrive_gallery_logic.py",
       "simple-photo-gallery/simplegallery/test/logic/variants/test_file_gallery_logic.py",
+      "dedup_backup_20251101_033200/SpotifyMP3/.history/playlist_20221230180809.py",
+      "dedup_backup_20251101_033200/_versions/DEVELOPMENT/process/process_17.py",
+      "dedup_backup_20251101_033200/_versions/CONTENT_CREATION/leonardo/leodown_9.py",
+      "dedup_backup_20251101_033200/_versions/CONTENT_CREATION/leonardo/leodown_6.py",
+      "dedup_backup_20251101_033200/leonardo/.history/process_leonardo_20250102110149.py",
+      "dedup_backup_20251101_033200/leonardo/.history/leodown_20250102105144.py",
+      "dedup_backup_20251101_033200/leonardo/.history/leodown_20250102105147.py",
+      "dedup_backup_20251101_033200/leonardo/.history/process_leonardo_20250102104737.py",
+      "dedup_backup_20251101_033200/leonardo/.history/leodown_20250102111110.py",
+      "dedup_backup_20251101_033200/Youtube/youtube-shorts-reddit-scraper/.history/main_20221230223427.py",
+      "dedup_backup_20251101_033200/dedup_backup/Users/steven/Documents/python/dedup_backup/Users/steven/Documents/python/twitchtube/twitchtube/youtube_request.py",
       "Reddit-Tiktok-Video-Bot/video_creation/final_video.py",
-      "dedup_backup/Users/steven/Documents/python/dedup_backup/Users/steven/Documents/python/twitchtube/twitchtube/youtube_request.py",
       "savify/docs/youtube_tool.py",
       "savify/savify/ffmpegdl.py",
       "savify/savify/types.py",
@@ -1554,10 +1624,6 @@
         "lines": 768
       },
       {
-        "file": "ai_powered_deep_analyzer.py",
-        "lines": 735
-      },
-      {
         "file": "integrate.py",
         "lines": 501
       },
@@ -1718,6 +1784,38 @@
         "lines": 1021
       },
       {
+        "file": "bare_except_backup_20251101_033421/simple_analysis_and_docs.py",
+        "lines": 929
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/snoopplugins.py",
+        "lines": 548
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/cleaner.py",
+        "lines": 513
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/ai-powered-deep-analyzer.py",
+        "lines": 735
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/universal-conversation-exporter.py",
+        "lines": 737
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/home_folder_intelligence.py",
+        "lines": 1086
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/nanobanana.py",
+        "lines": 542
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/suno-conversation-exporter.py",
+        "lines": 527
+      },
+      {
         "file": "analyzers/python_deep_6_level_analyzer.py",
         "lines": 606
       },
@@ -1766,12 +1864,140 @@
         "lines": 805
       },
       {
+        "file": "dedup_backup_20251101_033200/ai_powered_deep_analyzer.py",
+        "lines": 735
+      },
+      {
         "file": "youtube_bulk_upload/YouTubeBulkUploaderGUI.py",
         "lines": 901
       },
       {
+        "file": "python_backup/simple_analysis_and_docs.py",
+        "lines": 929
+      },
+      {
         "file": "organizers/excel_intelligent_organizer.py",
         "lines": 557
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/advanced_workflows/seo_domination_engine.py",
+        "lines": 702
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/advanced_workflows/market_research_platform.py",
+        "lines": 671
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/advanced_workflows/revenue_engine.py",
+        "lines": 805
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/TikTok-Compilation-Video-Generator/TikTok Client/Client.py",
+        "lines": 870
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/_versions/SOCIAL_PLATFORMS/instagram/botError_1.py",
+        "lines": 720
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/_versions/SOCIAL_PLATFORMS/instagram/config_36.py",
+        "lines": 1541
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/_versions/SOCIAL_PLATFORMS/instagram/scraper_2.py",
+        "lines": 2913
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/_versions/DEVELOPMENT/script/script_28.py",
+        "lines": 1550
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/_versions/DEVELOPMENT/script/script_189.py",
+        "lines": 799
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/_versions/DEVELOPMENT/script/script_168.py",
+        "lines": 948
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/_versions/DEVELOPMENT/script/script_148.py",
+        "lines": 1158
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/_versions/DEVELOPMENT/testing/comparison_1.py",
+        "lines": 870
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/_versions/DEVELOPMENT/testing/intelligent_6.py",
+        "lines": 1723
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/_versions/DATA_PROCESSING/json/robust_3.py",
+        "lines": 923
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/_versions/FILE_MANAGEMENT/organize/tehSiTes_4.py",
+        "lines": 560
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/_versions/FILE_MANAGEMENT/organize/deep_18.py",
+        "lines": 590
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/_versions/FILE_MANAGEMENT/organize/conversation-exporter_1.py",
+        "lines": 854
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/_versions/FILE_MANAGEMENT/organize/tehSiTes_8.py",
+        "lines": 515
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/_versions/FILE_MANAGEMENT/organize/DOCUMENTS_4.py",
+        "lines": 1000
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/_versions/FILE_MANAGEMENT/organize/context_1.py",
+        "lines": 956
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/_versions/MEDIA_PROCESSING/image/clientUI_1.py",
+        "lines": 864
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/_versions/MEDIA_PROCESSING/convert/convert_12.py",
+        "lines": 1537
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/_versions/AUTOMATION/selenium/GmailBot_1.py",
+        "lines": 1016
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/_versions/AUTOMATION/selenium/send_3.py",
+        "lines": 995
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/_versions/AI_TOOLS/claude/deep_15.py",
+        "lines": 895
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/_versions/AI_TOOLS/stability/medium_1.py",
+        "lines": 969
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/_versions/AI_TOOLS/stability/format_6.py",
+        "lines": 1022
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/PrNdOwN/PrNdOwN/downloader.py",
+        "lines": 1550
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/python3.9/lib/python3.12/site-packages/pip/_vendor/msgpack/fallback.py",
+        "lines": 1011
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/python3.9/lib/python3.12/site-packages/pip/_vendor/rich/traceback.py",
+        "lines": 757
       },
       {
         "file": "igbot/tests/test_bot_get.py",
@@ -2938,254 +3164,256 @@
         "lines": 33035
       },
       {
-        "file": "dedup_backup/Users/steven/Documents/python/dedup_backup/Users/steven/Documents/python/simple_python_explorer.py",
+        "file": "dedup_backup_20251101_033200/dedup_backup/Users/steven/Documents/python/dedup_backup/Users/steven/Documents/python/simple_python_explorer.py",
         "lines": 867
       },
       {
-        "file": "dedup_backup/Users/steven/Documents/python/dedup_backup/Users/steven/Documents/python/github_repo_manager.py",
+        "file": "dedup_backup_20251101_033200/dedup_backup/Users/steven/Documents/python/dedup_backup/Users/steven/Documents/python/github_repo_manager.py",
         "lines": 1681
       },
       {
-        "file": "dedup_backup/Users/steven/Documents/python/dedup_backup/Users/steven/Documents/python/simple_analysis_and_docs.py",
+        "file": "dedup_backup_20251101_033200/dedup_backup/Users/steven/Documents/python/dedup_backup/Users/steven/Documents/python/simple_analysis_and_docs.py",
         "lines": 929
       },
       {
-        "file": "dedup_backup/Users/steven/Documents/python/dedup_backup/Users/steven/Documents/python/python_code_enhancer.py",
+        "file": "dedup_backup_20251101_033200/dedup_backup/Users/steven/Documents/python/dedup_backup/Users/steven/Documents/python/python_code_enhancer.py",
         "lines": 506
       },
       {
-        "file": "dedup_backup/Users/steven/Documents/python/dedup_backup/Users/steven/Documents/python/deep_content_analyzer.py",
+        "file": "dedup_backup_20251101_033200/dedup_backup/Users/steven/Documents/python/dedup_backup/Users/steven/Documents/python/deep_content_analyzer.py",
         "lines": 1150
       },
       {
-        "file": "dedup_backup/Users/steven/Documents/python/dedup_backup/Users/steven/Documents/python/auto_update_github.py",
+        "file": "dedup_backup_20251101_033200/dedup_backup/Users/steven/Documents/python/dedup_backup/Users/steven/Documents/python/auto_update_github.py",
         "lines": 588
       },
       {
-        "file": "dedup_backup/Users/steven/Documents/python/dedup_backup/Users/steven/Documents/python/github_repo_analyzer.py",
+        "file": "dedup_backup_20251101_033200/dedup_backup/Users/steven/Documents/python/dedup_backup/Users/steven/Documents/python/github_repo_analyzer.py",
         "lines": 1143
       },
       {
-        "file": "dedup_backup/Users/steven/Documents/python/dedup_backup/Users/steven/Documents/python/generate_code_gallery.py",
+        "file": "dedup_backup_20251101_033200/dedup_backup/Users/steven/Documents/python/dedup_backup/Users/steven/Documents/python/generate_code_gallery.py",
         "lines": 1699
       },
       {
-        "file": "dedup_backup/Users/steven/Documents/python/dedup_backup/Users/steven/Documents/python/comprehensive_doc_generator.py",
+        "file": "dedup_backup_20251101_033200/dedup_backup/Users/steven/Documents/python/dedup_backup/Users/steven/Documents/python/comprehensive_doc_generator.py",
         "lines": 960
       }
     ],
     "bare_except": [
-      "download_vid.py",
-      "crawl.py",
-      "Targeted.py",
-      "specific.py",
-      "AskReddit_loop.py",
-      "typography.py",
-      "ZipArchiveAnalyzer.py",
-      "rename_file.py",
       "translate.py",
-      "snoopnetworktest.py",
-      "YouTubeLivestreamBotter.py",
-      "intelligent_sort.py",
-      "search_date.py",
-      "intelligent_bulk_renamer.py",
-      "upload.py",
-      "simpleerr.py",
-      "printify_bestseller_fetcher.py",
-      "botStories.py",
-      "subject.py",
-      "simple_analysis_and_docs.py",
-      "segments.py",
-      "snoopplugins.py",
-      "clipEditor.py",
-      "migrate_dirs.py",
-      "confcli.py",
-      "configHandler.py",
-      "pickleshare.py",
-      "etsy_collection_indexer.py",
-      "botLike.py",
-      "devops.py",
-      "ai_powered_deep_analyzer.py",
-      "youtube_get_best_use_case.py",
-      "claude_workspace_audit.py",
-      "FinalRootCleanup.py",
-      "chatgpt-conversation-exporter.py",
-      "cleaner.py",
-      "ai-powered-deep-analyzer.py",
-      "engine.py",
-      "deepreload.py",
-      "analyze-text-writer.py",
-      "universal-conversation-exporter.py",
-      "batch-text-reader.py",
-      "advanced-cleanup-renamer.py",
-      "reorganize.py",
-      "eliminate.py",
-      "python-renamer.py",
-      "storyboard.py",
-      "launcher.py",
-      "home_folder_intelligence.py",
-      "login.py",
-      "subredditSentiment_apps.py",
-      "botDraw.py",
-      "nanobanana.py",
-      "crashhandler.py",
-      "software.py",
-      "suno-conversation-exporter.py",
-      "smart_deduplication_tool.py",
       "iplib.py",
-      "analyzers/python_diff_merge_analyzer.py",
-      "Automated Reddit to Youtube Bot/youtube.py",
-      "Automated Reddit to Youtube Bot/upload.py",
-      "one-offs/fluid_document_sweep.py",
-      "YouTube-Livestream-Botter/YouTube_Livestream_Botter.py",
-      "advanced_workflows/seo_domination_engine.py",
-      "advanced_workflows/market_research_platform.py",
-      "advanced_workflows/revenue_engine.py",
-      "redditVideoGenerator/AskReddit_loop.py",
-      "redditVideoGenerator/AskReddit.py",
-      "Twitch-Best-Of/youtube_remove_old_files.py",
-      "Backlinker/backlinker.py",
-      "InstagramReportBot/InstaReport/InstaReport/InstaReport/libs/attack.py",
-      "FOSS-Voice-Assistant/src/youtube_listener.py",
-      "SpotifyMP3/.history/playlist_20221230180403.py",
+      "bare_except_backup_20251101_033421/download_vid.py",
+      "bare_except_backup_20251101_033421/crawl.py",
+      "bare_except_backup_20251101_033421/Targeted.py",
+      "bare_except_backup_20251101_033421/specific.py",
+      "bare_except_backup_20251101_033421/AskReddit_loop.py",
+      "bare_except_backup_20251101_033421/typography.py",
+      "bare_except_backup_20251101_033421/ZipArchiveAnalyzer.py",
+      "bare_except_backup_20251101_033421/rename_file.py",
+      "bare_except_backup_20251101_033421/snoopnetworktest.py",
+      "bare_except_backup_20251101_033421/YouTubeLivestreamBotter.py",
+      "bare_except_backup_20251101_033421/intelligent_sort.py",
+      "bare_except_backup_20251101_033421/search_date.py",
+      "bare_except_backup_20251101_033421/intelligent_bulk_renamer.py",
+      "bare_except_backup_20251101_033421/upload.py",
+      "bare_except_backup_20251101_033421/simpleerr.py",
+      "bare_except_backup_20251101_033421/printify_bestseller_fetcher.py",
+      "bare_except_backup_20251101_033421/botStories.py",
+      "bare_except_backup_20251101_033421/subject.py",
+      "bare_except_backup_20251101_033421/simple_analysis_and_docs.py",
+      "bare_except_backup_20251101_033421/segments.py",
+      "bare_except_backup_20251101_033421/snoopplugins.py",
+      "bare_except_backup_20251101_033421/clipEditor.py",
+      "bare_except_backup_20251101_033421/migrate_dirs.py",
+      "bare_except_backup_20251101_033421/confcli.py",
+      "bare_except_backup_20251101_033421/configHandler.py",
+      "bare_except_backup_20251101_033421/pickleshare.py",
+      "bare_except_backup_20251101_033421/etsy_collection_indexer.py",
+      "bare_except_backup_20251101_033421/botLike.py",
+      "bare_except_backup_20251101_033421/devops.py",
+      "bare_except_backup_20251101_033421/youtube_get_best_use_case.py",
+      "bare_except_backup_20251101_033421/claude_workspace_audit.py",
+      "bare_except_backup_20251101_033421/FinalRootCleanup.py",
+      "bare_except_backup_20251101_033421/chatgpt-conversation-exporter.py",
+      "bare_except_backup_20251101_033421/cleaner.py",
+      "bare_except_backup_20251101_033421/ai-powered-deep-analyzer.py",
+      "bare_except_backup_20251101_033421/engine.py",
+      "bare_except_backup_20251101_033421/deepreload.py",
+      "bare_except_backup_20251101_033421/analyze-text-writer.py",
+      "bare_except_backup_20251101_033421/universal-conversation-exporter.py",
+      "bare_except_backup_20251101_033421/batch-text-reader.py",
+      "bare_except_backup_20251101_033421/advanced-cleanup-renamer.py",
+      "bare_except_backup_20251101_033421/reorganize.py",
+      "bare_except_backup_20251101_033421/eliminate.py",
+      "bare_except_backup_20251101_033421/python-renamer.py",
+      "bare_except_backup_20251101_033421/storyboard.py",
+      "bare_except_backup_20251101_033421/launcher.py",
+      "bare_except_backup_20251101_033421/home_folder_intelligence.py",
+      "bare_except_backup_20251101_033421/login.py",
+      "bare_except_backup_20251101_033421/subredditSentiment_apps.py",
+      "bare_except_backup_20251101_033421/botDraw.py",
+      "bare_except_backup_20251101_033421/nanobanana.py",
+      "bare_except_backup_20251101_033421/crashhandler.py",
+      "bare_except_backup_20251101_033421/software.py",
+      "bare_except_backup_20251101_033421/suno-conversation-exporter.py",
+      "bare_except_backup_20251101_033421/smart_deduplication_tool.py",
+      "dedup_backup_20251101_033200/ai_powered_deep_analyzer.py",
+      "python_backup/simple_analysis_and_docs.py",
+      "bare_except_backup_20251101_033421/analyzers/python_diff_merge_analyzer.py",
+      "bare_except_backup_20251101_033421/Automated Reddit to Youtube Bot/youtube.py",
+      "bare_except_backup_20251101_033421/Automated Reddit to Youtube Bot/upload.py",
+      "bare_except_backup_20251101_033421/one-offs/fluid_document_sweep.py",
+      "bare_except_backup_20251101_033421/YouTube-Livestream-Botter/YouTube_Livestream_Botter.py",
+      "bare_except_backup_20251101_033421/advanced_workflows/seo_domination_engine.py",
+      "bare_except_backup_20251101_033421/advanced_workflows/market_research_platform.py",
+      "bare_except_backup_20251101_033421/advanced_workflows/revenue_engine.py",
+      "bare_except_backup_20251101_033421/redditVideoGenerator/AskReddit_loop.py",
+      "bare_except_backup_20251101_033421/redditVideoGenerator/AskReddit.py",
+      "bare_except_backup_20251101_033421/Twitch-Best-Of/youtube_remove_old_files.py",
+      "bare_except_backup_20251101_033421/Backlinker/backlinker.py",
+      "bare_except_backup_20251101_033421/InstagramReportBot/InstaReport/InstaReport/InstaReport/libs/attack.py",
+      "bare_except_backup_20251101_033421/FOSS-Voice-Assistant/src/youtube_listener.py",
+      "bare_except_backup_20251101_033421/SpotifyMP3/.history/playlist_20221230180403.py",
+      "bare_except_backup_20251101_033421/TikTok-Compilation-Video-Generator/TikTok Client/Client.py",
+      "bare_except_backup_20251101_033421/Instagram-Mass-report/libs/check_modules.py",
+      "bare_except_backup_20251101_033421/Instagram-Mass-report/libs/attack.py",
+      "bare_except_backup_20251101_033421/_versions/SOCIAL_PLATFORMS/youtube/create_7.py",
+      "bare_except_backup_20251101_033421/_versions/SOCIAL_PLATFORMS/youtube/yt_9.py",
+      "bare_except_backup_20251101_033421/_versions/SOCIAL_PLATFORMS/youtube/yt_34.py",
+      "bare_except_backup_20251101_033421/_versions/SOCIAL_PLATFORMS/youtube/youtube_19.py",
+      "bare_except_backup_20251101_033421/_versions/SOCIAL_PLATFORMS/youtube/scraper_7.py",
+      "bare_except_backup_20251101_033421/_versions/SOCIAL_PLATFORMS/reddit/subreddit_2.py",
+      "bare_except_backup_20251101_033421/_versions/SOCIAL_PLATFORMS/instagram/botError_1.py",
+      "bare_except_backup_20251101_033421/_versions/SOCIAL_PLATFORMS/instagram/botComment_1.py",
+      "bare_except_backup_20251101_033421/_versions/SOCIAL_PLATFORMS/instagram/config_36.py",
+      "bare_except_backup_20251101_033421/_versions/SOCIAL_PLATFORMS/instagram/scraper_2.py",
+      "bare_except_backup_20251101_033421/_versions/DEVELOPMENT/gui_apps/input_1.py",
+      "bare_except_backup_20251101_033421/_versions/DEVELOPMENT/utils/utils_17.py",
+      "bare_except_backup_20251101_033421/_versions/DEVELOPMENT/utils/utils_16.py",
+      "bare_except_backup_20251101_033421/_versions/DEVELOPMENT/utils/utils_11.py",
+      "bare_except_backup_20251101_033421/_versions/DEVELOPMENT/script/script_28.py",
+      "bare_except_backup_20251101_033421/_versions/DEVELOPMENT/script/script_145.py",
+      "bare_except_backup_20251101_033421/_versions/DEVELOPMENT/script/script_272.py",
+      "bare_except_backup_20251101_033421/_versions/DEVELOPMENT/script/script_78.py",
+      "bare_except_backup_20251101_033421/_versions/DEVELOPMENT/script/script_160.py",
+      "bare_except_backup_20251101_033421/_versions/DEVELOPMENT/script/script_189.py",
+      "bare_except_backup_20251101_033421/_versions/DEVELOPMENT/script/script_56.py",
+      "bare_except_backup_20251101_033421/_versions/DEVELOPMENT/script/script_71.py",
+      "bare_except_backup_20251101_033421/_versions/DEVELOPMENT/script/script_55.py",
+      "bare_except_backup_20251101_033421/_versions/DEVELOPMENT/script/script_168.py",
+      "bare_except_backup_20251101_033421/_versions/DEVELOPMENT/script/script_148.py",
+      "bare_except_backup_20251101_033421/_versions/DEVELOPMENT/testing/comparison_1.py",
+      "bare_except_backup_20251101_033421/_versions/DEVELOPMENT/testing/intelligent_6.py",
+      "bare_except_backup_20251101_033421/_versions/DEVELOPMENT/batch/batch_10.py",
+      "bare_except_backup_20251101_033421/_versions/DEVELOPMENT/main/main_18.py",
+      "bare_except_backup_20251101_033421/_versions/WEB_SCRAPING/download/intelligent_10.py",
+      "bare_except_backup_20251101_033421/_versions/WEB_SCRAPING/download/giphy_downloader_v2.py",
+      "bare_except_backup_20251101_033421/_versions/WEB_SCRAPING/download/intelligent_9.py",
+      "bare_except_backup_20251101_033421/_versions/WEB_SCRAPING/download/main.py_v4.py",
+      "bare_except_backup_20251101_033421/_versions/WEB_SCRAPING/download/scrape_6.py",
+      "bare_except_backup_20251101_033421/_versions/WEB_SCRAPING/api_clients/message_7.py",
+      "bare_except_backup_20251101_033421/_versions/PROJECTS/tehSiTes/tehSiTes_9.py",
+      "bare_except_backup_20251101_033421/_versions/DATA_PROCESSING/json/robust_3.py",
+      "bare_except_backup_20251101_033421/_versions/DATA_PROCESSING/json/conda_1.py",
+      "bare_except_backup_20251101_033421/_versions/FILE_MANAGEMENT/organize/execute_9.py",
+      "bare_except_backup_20251101_033421/_versions/FILE_MANAGEMENT/organize/tehSiTes_4.py",
+      "bare_except_backup_20251101_033421/_versions/FILE_MANAGEMENT/organize/deep_18.py",
+      "bare_except_backup_20251101_033421/_versions/FILE_MANAGEMENT/organize/clean_3.py",
+      "bare_except_backup_20251101_033421/_versions/FILE_MANAGEMENT/organize/organize_16.py",
+      "bare_except_backup_20251101_033421/_versions/FILE_MANAGEMENT/organize/tehSiTes_6.py",
+      "bare_except_backup_20251101_033421/_versions/FILE_MANAGEMENT/organize/organize_12.py",
+      "bare_except_backup_20251101_033421/_versions/FILE_MANAGEMENT/organize/conversation-exporter_1.py",
+      "bare_except_backup_20251101_033421/_versions/FILE_MANAGEMENT/organize/organize_23.py",
+      "bare_except_backup_20251101_033421/_versions/FILE_MANAGEMENT/organize/cleanup_5.py",
+      "bare_except_backup_20251101_033421/_versions/FILE_MANAGEMENT/organize/tehSiTes_8.py",
+      "bare_except_backup_20251101_033421/_versions/FILE_MANAGEMENT/organize/DOCUMENTS_4.py",
+      "bare_except_backup_20251101_033421/_versions/FILE_MANAGEMENT/organize/context_1.py",
+      "bare_except_backup_20251101_033421/_versions/CONTENT_CREATION/nocturne/album_page_html_v3.py",
+      "bare_except_backup_20251101_033421/_versions/CONTENT_CREATION/nocturne/album_page_html_v2.py",
+      "bare_except_backup_20251101_033421/_versions/CONTENT_CREATION/nocturne/message_10.py",
+      "bare_except_backup_20251101_033421/_versions/CONTENT_CREATION/nocturne/album_page_html_v1.py",
+      "bare_except_backup_20251101_033421/_versions/CONTENT_CREATION/nocturne/playlist_7.py",
+      "bare_except_backup_20251101_033421/_versions/CONTENT_CREATION/video_automation/motivational_video_generator_pexels.py",
+      "bare_except_backup_20251101_033421/_versions/UTILITIES/misc/console_1.py",
+      "bare_except_backup_20251101_033421/_versions/UTILITIES/misc/check_21.py",
+      "bare_except_backup_20251101_033421/_versions/UTILITIES/misc/display_8.py",
+      "bare_except_backup_20251101_033421/_versions/UTILITIES/misc/check_34.py",
+      "bare_except_backup_20251101_033421/_versions/UTILITIES/file_operations/unzip_1.py",
+      "bare_except_backup_20251101_033421/_versions/UTILITIES/file_operations/comprehensive_9.py",
+      "bare_except_backup_20251101_033421/_versions/UTILITIES/file_operations/archive_1.py",
+      "bare_except_backup_20251101_033421/_versions/UTILITIES/file_operations/message_6.py",
+      "bare_except_backup_20251101_033421/_versions/UTILITIES/file_operations/Python_3.py",
+      "bare_except_backup_20251101_033421/_versions/UTILITIES/file_operations/merge_6.py",
+      "bare_except_backup_20251101_033421/_versions/UTILITIES/file_operations/settings_1.py",
+      "bare_except_backup_20251101_033421/_versions/UTILITIES/file_operations/Smart_6.py",
+      "bare_except_backup_20251101_033421/_versions/UTILITIES/file_operations/remove_1.py",
+      "bare_except_backup_20251101_033421/_versions/UTILITIES/file_operations/Documents_1.py",
+      "bare_except_backup_20251101_033421/_versions/MEDIA_PROCESSING/video/twitchClips_1.py",
+      "bare_except_backup_20251101_033421/_versions/MEDIA_PROCESSING/upscale/execute_11.py",
+      "bare_except_backup_20251101_033421/_versions/MEDIA_PROCESSING/upscale/upscale_19.py",
+      "bare_except_backup_20251101_033421/_versions/MEDIA_PROCESSING/image/deep_17.py",
+      "bare_except_backup_20251101_033421/_versions/MEDIA_PROCESSING/image/TelegraphImageDownloader[RUS]_3.py",
+      "bare_except_backup_20251101_033421/_versions/MEDIA_PROCESSING/image/clientUI_1.py",
+      "bare_except_backup_20251101_033421/_versions/MEDIA_PROCESSING/audio/fix_7.py",
+      "bare_except_backup_20251101_033421/_versions/MEDIA_PROCESSING/audio/gemini_1.py",
+      "bare_except_backup_20251101_033421/_versions/MEDIA_PROCESSING/convert/convert_20.py",
+      "bare_except_backup_20251101_033421/_versions/MEDIA_PROCESSING/convert/convert_14.py",
+      "bare_except_backup_20251101_033421/_versions/MEDIA_PROCESSING/convert/convert_31.py",
+      "bare_except_backup_20251101_033421/_versions/MEDIA_PROCESSING/convert/convert_12.py",
+      "bare_except_backup_20251101_033421/_versions/MEDIA_PROCESSING/convert/convert_32.py",
+      "bare_except_backup_20251101_033421/_versions/MEDIA_PROCESSING/convert/convert_38.py",
+      "bare_except_backup_20251101_033421/_versions/AUTOMATION/selenium/GmailBot_1.py",
+      "bare_except_backup_20251101_033421/_versions/AUTOMATION/selenium/send_3.py",
+      "bare_except_backup_20251101_033421/_versions/AI_TOOLS/claude/search_7.py",
+      "bare_except_backup_20251101_033421/_versions/AI_TOOLS/claude/deep_15.py",
+      "bare_except_backup_20251101_033421/_versions/AI_TOOLS/stability/medium_1.py",
+      "bare_except_backup_20251101_033421/_versions/AI_TOOLS/stability/format_6.py",
+      "bare_except_backup_20251101_033421/leonardo/myenv/lib/python3.11/site-packages/pip/_vendor/pygments/formatters/SvgFormatter.py",
+      "bare_except_backup_20251101_033421/leonardo/myenv/lib/python3.11/site-packages/pip/_vendor/cachecontrol/caches/file_cache.py",
+      "bare_except_backup_20251101_033421/videoGenerator/.history/main_20221230233546.py",
+      "bare_except_backup_20251101_033421/PrNdOwN/PrNdOwN/downloader.py",
+      "bare_except_backup_20251101_033421/Youtube/YoutubeBot/Firefox/YouTubeBot.py",
+      "bare_except_backup_20251101_033421/TG-MegaBot/plugins/generate_screen_shot.py",
+      "bare_except_backup_20251101_033421/TG-MegaBot/plugins/rename_file.py",
+      "bare_except_backup_20251101_033421/TG-MegaBot/plugins/get_external_link.py",
+      "bare_except_backup_20251101_033421/TG-MegaBot/plugins/custom_thumbnail.py",
+      "bare_except_backup_20251101_033421/TG-MegaBot/plugins/youtube_dl_button.py",
+      "bare_except_backup_20251101_033421/TG-MegaBot/plugins/unzip.py",
+      "bare_except_backup_20251101_033421/TG-MegaBot/plugins/convert_to_video.py",
+      "bare_except_backup_20251101_033421/TG-MegaBot/plugins/convert_to_audio.py",
+      "bare_except_backup_20251101_033421/TG-MegaBot/plugins/cb_buttons.py",
+      "bare_except_backup_20251101_033421/TG-MegaBot/plugins/dl_button.py",
+      "bare_except_backup_20251101_033421/TG-MegaBot/helper_funcs/help_uploadbot.py",
+      "bare_except_backup_20251101_033421/python3.9/lib/python3.12/site-packages/pip/_vendor/msgpack/fallback.py",
+      "bare_except_backup_20251101_033421/python3.9/lib/python3.12/site-packages/pip/_vendor/rich/logging.py",
+      "bare_except_backup_20251101_033421/python3.9/lib/python3.12/site-packages/pip/_vendor/rich/traceback.py",
+      "bare_except_backup_20251101_033421/python3.9/lib/python3.12/site-packages/pip/_vendor/pygments/formatters/SvgFormatter.py",
+      "bare_except_backup_20251101_033421/simple-photo-gallery/simplegallery/media.py",
+      "bare_except_backup_20251101_033421/reddit-to-instagram-bot/RDT-IG bot/youtube_DLimage.py",
+      "bare_except_backup_20251101_033421/Untitled/src/botStories.py",
+      "bare_except_backup_20251101_033421/Untitled/src/botDraw.py",
+      "bare_except_backup_20251101_033421/007spam-BOT/libs/instaclient.py",
+      "bare_except_backup_20251101_033421/007spam-BOT/libs/utils.py",
+      "bare_except_backup_20251101_033421/TwitchCompilationCreator/src/utils.py",
       "SpotifyMP3/.history/playlist_20221230180508.py",
-      "SpotifyMP3/.history/playlist_20221230180809.py",
       "SpotifyMP3/.history/playlist_20221230180628.py",
       "SpotifyMP3/.history/playlist_20221230180525.py",
-      "TikTok-Compilation-Video-Generator/TikTok Client/Client.py",
-      "Instagram-Mass-report/libs/check_modules.py",
-      "Instagram-Mass-report/libs/attack.py",
-      "_versions/SOCIAL_PLATFORMS/youtube/create_7.py",
-      "_versions/SOCIAL_PLATFORMS/youtube/yt_9.py",
-      "_versions/SOCIAL_PLATFORMS/youtube/yt_34.py",
-      "_versions/SOCIAL_PLATFORMS/youtube/youtube_19.py",
-      "_versions/SOCIAL_PLATFORMS/youtube/scraper_7.py",
       "_versions/SOCIAL_PLATFORMS/reddit/AskReddit_1.py",
-      "_versions/SOCIAL_PLATFORMS/reddit/subreddit_2.py",
-      "_versions/SOCIAL_PLATFORMS/instagram/botError_1.py",
-      "_versions/SOCIAL_PLATFORMS/instagram/botComment_1.py",
-      "_versions/SOCIAL_PLATFORMS/instagram/config_36.py",
-      "_versions/SOCIAL_PLATFORMS/instagram/scraper_2.py",
-      "_versions/DEVELOPMENT/gui_apps/input_1.py",
-      "_versions/DEVELOPMENT/utils/utils_17.py",
-      "_versions/DEVELOPMENT/utils/utils_16.py",
-      "_versions/DEVELOPMENT/utils/utils_11.py",
-      "_versions/DEVELOPMENT/script/script_28.py",
-      "_versions/DEVELOPMENT/script/script_145.py",
-      "_versions/DEVELOPMENT/script/script_272.py",
-      "_versions/DEVELOPMENT/script/script_78.py",
-      "_versions/DEVELOPMENT/script/script_160.py",
       "_versions/DEVELOPMENT/script/script_154.py",
-      "_versions/DEVELOPMENT/script/script_189.py",
-      "_versions/DEVELOPMENT/script/script_56.py",
-      "_versions/DEVELOPMENT/script/script_71.py",
-      "_versions/DEVELOPMENT/script/script_55.py",
-      "_versions/DEVELOPMENT/script/script_168.py",
-      "_versions/DEVELOPMENT/script/script_148.py",
-      "_versions/DEVELOPMENT/testing/comparison_1.py",
-      "_versions/DEVELOPMENT/testing/intelligent_6.py",
-      "_versions/DEVELOPMENT/batch/batch_10.py",
       "_versions/DEVELOPMENT/web_frameworks/python_8.py",
       "_versions/DEVELOPMENT/main/main_19.py",
-      "_versions/DEVELOPMENT/main/main_18.py",
-      "_versions/DEVELOPMENT/main/main_28.py",
-      "_versions/WEB_SCRAPING/download/intelligent_10.py",
-      "_versions/WEB_SCRAPING/download/giphy_downloader_v2.py",
-      "_versions/WEB_SCRAPING/download/intelligent_9.py",
-      "_versions/WEB_SCRAPING/download/main.py_v4.py",
-      "_versions/WEB_SCRAPING/download/scrape_6.py",
-      "_versions/WEB_SCRAPING/api_clients/message_7.py",
-      "_versions/PROJECTS/tehSiTes/tehSiTes_9.py",
       "_versions/DATA_PROCESSING/parse/parse_1.py",
-      "_versions/DATA_PROCESSING/json/robust_3.py",
-      "_versions/DATA_PROCESSING/json/conda_1.py",
-      "_versions/FILE_MANAGEMENT/organize/execute_9.py",
-      "_versions/FILE_MANAGEMENT/organize/tehSiTes_4.py",
-      "_versions/FILE_MANAGEMENT/organize/deep_18.py",
-      "_versions/FILE_MANAGEMENT/organize/clean_3.py",
-      "_versions/FILE_MANAGEMENT/organize/organize_16.py",
-      "_versions/FILE_MANAGEMENT/organize/tehSiTes_6.py",
-      "_versions/FILE_MANAGEMENT/organize/organize_12.py",
-      "_versions/FILE_MANAGEMENT/organize/conversation-exporter_1.py",
-      "_versions/FILE_MANAGEMENT/organize/organize_23.py",
-      "_versions/FILE_MANAGEMENT/organize/cleanup_5.py",
-      "_versions/FILE_MANAGEMENT/organize/tehSiTes_8.py",
-      "_versions/FILE_MANAGEMENT/organize/DOCUMENTS_4.py",
-      "_versions/FILE_MANAGEMENT/organize/context_1.py",
-      "_versions/CONTENT_CREATION/nocturne/album_page_html_v3.py",
-      "_versions/CONTENT_CREATION/nocturne/album_page_html_v2.py",
-      "_versions/CONTENT_CREATION/nocturne/message_10.py",
-      "_versions/CONTENT_CREATION/nocturne/album_page_html_v1.py",
-      "_versions/CONTENT_CREATION/nocturne/playlist_7.py",
-      "_versions/CONTENT_CREATION/video_automation/motivational_video_generator_pexels.py",
-      "_versions/UTILITIES/misc/console_1.py",
-      "_versions/UTILITIES/misc/check_21.py",
-      "_versions/UTILITIES/misc/display_8.py",
-      "_versions/UTILITIES/misc/check_34.py",
-      "_versions/UTILITIES/file_operations/unzip_1.py",
-      "_versions/UTILITIES/file_operations/comprehensive_9.py",
-      "_versions/UTILITIES/file_operations/archive_1.py",
-      "_versions/UTILITIES/file_operations/message_6.py",
-      "_versions/UTILITIES/file_operations/Python_3.py",
-      "_versions/UTILITIES/file_operations/merge_6.py",
-      "_versions/UTILITIES/file_operations/settings_1.py",
-      "_versions/UTILITIES/file_operations/Smart_6.py",
-      "_versions/UTILITIES/file_operations/remove_1.py",
-      "_versions/UTILITIES/file_operations/Documents_1.py",
       "_versions/UTILITIES/scripts/main.py_v7.py",
-      "_versions/MEDIA_PROCESSING/video/twitchClips_1.py",
-      "_versions/MEDIA_PROCESSING/upscale/execute_11.py",
-      "_versions/MEDIA_PROCESSING/upscale/upscale_19.py",
-      "_versions/MEDIA_PROCESSING/image/deep_17.py",
-      "_versions/MEDIA_PROCESSING/image/TelegraphImageDownloader[RUS]_3.py",
-      "_versions/MEDIA_PROCESSING/image/clientUI_1.py",
-      "_versions/MEDIA_PROCESSING/audio/fix_7.py",
-      "_versions/MEDIA_PROCESSING/audio/gemini_1.py",
-      "_versions/MEDIA_PROCESSING/convert/convert_20.py",
-      "_versions/MEDIA_PROCESSING/convert/convert_14.py",
-      "_versions/MEDIA_PROCESSING/convert/convert_31.py",
-      "_versions/MEDIA_PROCESSING/convert/convert_12.py",
-      "_versions/MEDIA_PROCESSING/convert/convert_32.py",
-      "_versions/MEDIA_PROCESSING/convert/convert_38.py",
-      "_versions/AUTOMATION/selenium/GmailBot_1.py",
-      "_versions/AUTOMATION/selenium/send_3.py",
-      "_versions/AI_TOOLS/claude/search_7.py",
-      "_versions/AI_TOOLS/claude/deep_15.py",
-      "_versions/AI_TOOLS/stability/medium_1.py",
-      "_versions/AI_TOOLS/stability/format_6.py",
       "backlink_checker/xgoogle/browser.py",
       "backlink_checker/xgoogle/BeautifulSoup.py",
-      "leonardo/myenv/lib/python3.11/site-packages/pip/_vendor/pygments/formatters/SvgFormatter.py",
-      "leonardo/myenv/lib/python3.11/site-packages/pip/_vendor/cachecontrol/caches/file_cache.py",
-      "videoGenerator/.history/main_20221230233546.py",
-      "videoGenerator/.history/main_20221230234008.py",
-      "videoGenerator/.history/main_20221230233748.py",
-      "videoGenerator/.history/main_20221230225837.py",
-      "PrNdOwN/PrNdOwN/downloader.py",
-      "Youtube/YoutubeBot/Firefox/YouTubeBot.py",
-      "TG-MegaBot/plugins/generate_screen_shot.py",
-      "TG-MegaBot/plugins/rename_file.py",
-      "TG-MegaBot/plugins/get_external_link.py",
-      "TG-MegaBot/plugins/custom_thumbnail.py",
-      "TG-MegaBot/plugins/youtube_dl_button.py",
-      "TG-MegaBot/plugins/unzip.py",
-      "TG-MegaBot/plugins/convert_to_video.py",
-      "TG-MegaBot/plugins/convert_to_audio.py",
-      "TG-MegaBot/plugins/cb_buttons.py",
-      "TG-MegaBot/plugins/dl_button.py",
-      "TG-MegaBot/helper_funcs/help_uploadbot.py",
-      "python3.9/lib/python3.12/site-packages/pip/_vendor/msgpack/fallback.py",
-      "python3.9/lib/python3.12/site-packages/pip/_vendor/rich/logging.py",
       "python3.9/lib/python3.12/site-packages/pip/_vendor/rich/traceback.py",
-      "python3.9/lib/python3.12/site-packages/pip/_vendor/pygments/formatters/SvgFormatter.py",
-      "simple-photo-gallery/simplegallery/media.py",
-      "dedup_backup/Users/steven/Documents/python/dedup_backup/Users/steven/Documents/python/simple_analysis_and_docs.py",
-      "reddit-to-instagram-bot/RDT-IG bot/youtube_DLimage.py",
-      "Untitled/src/botStories.py",
-      "Untitled/src/botDraw.py",
-      "007spam-BOT/libs/instaclient.py",
-      "007spam-BOT/libs/utils.py",
-      "TwitchCompilationCreator/src/utils.py"
+      "dedup_backup_20251101_033200/SpotifyMP3/.history/playlist_20221230180809.py",
+      "dedup_backup_20251101_033200/_versions/DEVELOPMENT/main/main_28.py",
+      "dedup_backup_20251101_033200/videoGenerator/.history/main_20221230234008.py",
+      "dedup_backup_20251101_033200/videoGenerator/.history/main_20221230233748.py",
+      "dedup_backup_20251101_033200/videoGenerator/.history/main_20221230225837.py",
+      "dedup_backup_20251101_033200/dedup_backup/Users/steven/Documents/python/dedup_backup/Users/steven/Documents/python/simple_analysis_and_docs.py"
     ],
     "todos": [
       {
@@ -4801,6 +5029,318 @@
         "line": 155,
         "type": "TODO",
         "content": "# TODO change directory for ffmpeg.exe & ffprobe.exe"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/one-offs/fluid_document_sweep.py",
+        "line": 69,
+        "type": "TODO",
+        "content": "'low': ['pass', 'TODO', 'FIXME', 'XXX']"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/one-offs/fluid_document_sweep.py",
+        "line": 257,
+        "type": "TODO",
+        "content": "if 'TODO' in content: score -= 5"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/one-offs/fluid_document_sweep.py",
+        "line": 258,
+        "type": "FIXME",
+        "content": "if 'FIXME' in content: score -= 5"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/FOSS-Voice-Assistant/src/youtube_listener.py",
+        "line": 4,
+        "type": "TODO",
+        "content": "# TODO Eventually create a GUI interface akin to Suri"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/FOSS-Voice-Assistant/src/youtube_listener.py",
+        "line": 22,
+        "type": "TODO",
+        "content": "# TODO Find a way to change the driver to espeak"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/FOSS-Voice-Assistant/src/youtube_listener.py",
+        "line": 38,
+        "type": "TODO",
+        "content": "# TODO Fix adding extensions to geckodriver"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/FOSS-Voice-Assistant/src/youtube_listener.py",
+        "line": 44,
+        "type": "TODO",
+        "content": "# TODO Eventually we will have to create a dedicated setup"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/FOSS-Voice-Assistant/src/youtube_listener.py",
+        "line": 50,
+        "type": "TODO",
+        "content": "# TODO Remove the delay from the introduction to processing speech"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/FOSS-Voice-Assistant/src/youtube_listener.py",
+        "line": 54,
+        "type": "TODO",
+        "content": "# TODO clear this variable after a few minutes"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/FOSS-Voice-Assistant/src/youtube_listener.py",
+        "line": 63,
+        "type": "TODO",
+        "content": "# TODO Switch this back to sphinx when done testing"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/FOSS-Voice-Assistant/src/youtube_listener.py",
+        "line": 66,
+        "type": "TODO",
+        "content": "# TODO Change Jim to the name variable"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/FOSS-Voice-Assistant/src/youtube_listener.py",
+        "line": 76,
+        "type": "TODO",
+        "content": "# TODO Eventually remove this once everything is working"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/FOSS-Voice-Assistant/src/youtube_listener.py",
+        "line": 86,
+        "type": "TODO",
+        "content": "print(\"Say something\")  # TODO this is being printed later than expected"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/FOSS-Voice-Assistant/src/youtube_listener.py",
+        "line": 90,
+        "type": "TODO",
+        "content": "# TODO Switch this back to sphinx when done testing"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/FOSS-Voice-Assistant/src/youtube_listener.py",
+        "line": 98,
+        "type": "TODO",
+        "content": "# TODO Eventually remove this once everything is working"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/FOSS-Voice-Assistant/src/youtube_listener.py",
+        "line": 111,
+        "type": "TODO",
+        "content": "# TODO Put custom questions in here like who are you?"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/FOSS-Voice-Assistant/src/youtube_listener.py",
+        "line": 140,
+        "type": "TODO",
+        "content": "# TODO Optimize this especially the except clause since searches are slow"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/FOSS-Voice-Assistant/src/youtube_listener.py",
+        "line": 169,
+        "type": "TODO",
+        "content": "# TODO Come back to the development of play"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/FOSS-Voice-Assistant/src/youtube_listener.py",
+        "line": 176,
+        "type": "TODO",
+        "content": "# TODO check if play is empty or not"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/FOSS-Voice-Assistant/src/youtube_listener.py",
+        "line": 192,
+        "type": "TODO",
+        "content": "# TODO Find a way to find the url of the first result of the Youtube search"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/FOSS-Voice-Assistant/src/youtube_listener.py",
+        "line": 207,
+        "type": "TODO",
+        "content": "# TODO Run mpv headless"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/FOSS-Voice-Assistant/src/youtube_listener.py",
+        "line": 212,
+        "type": "TODO",
+        "content": "# TODO This does not get played since the .play is being ran"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/FOSS-Voice-Assistant/src/youtube_listener.py",
+        "line": 214,
+        "type": "TODO",
+        "content": "# TODO Eventually work on pausing playing and rewinding"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/FOSS-Voice-Assistant/src/youtube_listener.py",
+        "line": 216,
+        "type": "TODO",
+        "content": "# TODO Implement a way to stop the video when it is done"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/_versions/DEVELOPMENT/script/script_148.py",
+        "line": 631,
+        "type": "TODO",
+        "content": "descriptions.append(\"Contains technical debt markers (TODO/FIXME)\")"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/_versions/WEB_SCRAPING/download/main.py_v4.py",
+        "line": 4,
+        "type": "TODO",
+        "content": "# TODO Eventually create a GUI interface akin to Suri"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/_versions/WEB_SCRAPING/download/main.py_v4.py",
+        "line": 20,
+        "type": "TODO",
+        "content": "# TODO Find a way to change the driver to espeak"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/_versions/WEB_SCRAPING/download/main.py_v4.py",
+        "line": 36,
+        "type": "TODO",
+        "content": "# TODO Fix adding extensions to geckodriver"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/_versions/WEB_SCRAPING/download/main.py_v4.py",
+        "line": 42,
+        "type": "TODO",
+        "content": "# TODO Eventually we will have to create a dedicated setup"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/_versions/WEB_SCRAPING/download/main.py_v4.py",
+        "line": 48,
+        "type": "TODO",
+        "content": "# TODO Remove the delay from the introduction to processing speech"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/_versions/WEB_SCRAPING/download/main.py_v4.py",
+        "line": 52,
+        "type": "TODO",
+        "content": "# TODO clear this variable after a few minutes"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/_versions/WEB_SCRAPING/download/main.py_v4.py",
+        "line": 61,
+        "type": "TODO",
+        "content": "# TODO Switch this back to sphinx when done testing"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/_versions/WEB_SCRAPING/download/main.py_v4.py",
+        "line": 64,
+        "type": "TODO",
+        "content": "# TODO Change Jim to the name variable"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/_versions/WEB_SCRAPING/download/main.py_v4.py",
+        "line": 74,
+        "type": "TODO",
+        "content": "# TODO Eventually remove this once everything is working"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/_versions/WEB_SCRAPING/download/main.py_v4.py",
+        "line": 84,
+        "type": "TODO",
+        "content": "print(\"Say something\")  # TODO this is being printed later than expected"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/_versions/WEB_SCRAPING/download/main.py_v4.py",
+        "line": 88,
+        "type": "TODO",
+        "content": "# TODO Switch this back to sphinx when done testing"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/_versions/WEB_SCRAPING/download/main.py_v4.py",
+        "line": 96,
+        "type": "TODO",
+        "content": "# TODO Eventually remove this once everything is working"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/_versions/WEB_SCRAPING/download/main.py_v4.py",
+        "line": 109,
+        "type": "TODO",
+        "content": "# TODO Put custom questions in here like who are you?"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/_versions/WEB_SCRAPING/download/main.py_v4.py",
+        "line": 138,
+        "type": "TODO",
+        "content": "# TODO Optimize this especially the except clause since searches are slow"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/_versions/WEB_SCRAPING/download/main.py_v4.py",
+        "line": 167,
+        "type": "TODO",
+        "content": "# TODO Come back to the development of play"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/_versions/WEB_SCRAPING/download/main.py_v4.py",
+        "line": 174,
+        "type": "TODO",
+        "content": "# TODO check if play is empty or not"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/_versions/WEB_SCRAPING/download/main.py_v4.py",
+        "line": 190,
+        "type": "TODO",
+        "content": "# TODO Find a way to find the url of the first result of the Youtube search"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/_versions/WEB_SCRAPING/download/main.py_v4.py",
+        "line": 205,
+        "type": "TODO",
+        "content": "# TODO Run mpv headless"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/_versions/WEB_SCRAPING/download/main.py_v4.py",
+        "line": 210,
+        "type": "TODO",
+        "content": "# TODO This does not get played since the .play is being ran"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/_versions/WEB_SCRAPING/download/main.py_v4.py",
+        "line": 212,
+        "type": "TODO",
+        "content": "# TODO Eventually work on pausing playing and rewinding"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/_versions/WEB_SCRAPING/download/main.py_v4.py",
+        "line": 214,
+        "type": "TODO",
+        "content": "# TODO Implement a way to stop the video when it is done"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/leonardo/myenv/lib/python3.11/site-packages/pip/_vendor/cachecontrol/caches/file_cache.py",
+        "line": 82,
+        "type": "NOTE",
+        "content": "NOTE: In order to use the FileCache you must have"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/leonardo/myenv/lib/python3.11/site-packages/pip/_vendor/cachecontrol/caches/file_cache.py",
+        "line": 107,
+        "type": "NOTE",
+        "content": "# NOTE: This method should not change as some may depend on it."
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/python3.9/lib/python3.12/site-packages/pip/_vendor/msgpack/fallback.py",
+        "line": 554,
+        "type": "TODO",
+        "content": "# TODO should we eliminate the recursion?"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/python3.9/lib/python3.12/site-packages/pip/_vendor/msgpack/fallback.py",
+        "line": 558,
+        "type": "TODO",
+        "content": "# TODO check whether we need to call `list_hook`"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/python3.9/lib/python3.12/site-packages/pip/_vendor/msgpack/fallback.py",
+        "line": 566,
+        "type": "TODO",
+        "content": "# TODO is the interaction between `list_hook` and `use_list` ok?"
+      },
+      {
+        "file": "bare_except_backup_20251101_033421/python3.9/lib/python3.12/site-packages/pip/_vendor/msgpack/fallback.py",
+        "line": 571,
+        "type": "TODO",
+        "content": "# TODO check whether we need to call hooks"
       },
       {
         "file": "FOSS-Voice-Assistant/src/youtube_listener.py",
@@ -6525,18 +7065,6 @@
         "content": "TODO: Add function documentation"
       },
       {
-        "file": "_versions/FILE_MANAGEMENT/upload/NewUpload_15.py",
-        "line": 76,
-        "type": "NOTE",
-        "content": "# NOTE: The current value is wrapped in extra single quotes, which may cause a file not found error."
-      },
-      {
-        "file": "_versions/FILE_MANAGEMENT/upload/NewUpload_15.py",
-        "line": 83,
-        "type": "NOTE",
-        "content": "# NOTE: The current value contains newlines and non-ASCII characters (emojis, curly quotes)."
-      },
-      {
         "file": "_versions/FILE_MANAGEMENT/upload/upload_13.py",
         "line": 129,
         "type": "TODO",
@@ -6583,18 +7111,6 @@
         "line": 136,
         "type": "TODO",
         "content": "# TODO: Replace global variable with proper structure"
-      },
-      {
-        "file": "_versions/FILE_MANAGEMENT/upload/NewUpload_5.py",
-        "line": 76,
-        "type": "NOTE",
-        "content": "# NOTE: The current value is wrapped in extra single quotes, which may cause a file not found error."
-      },
-      {
-        "file": "_versions/FILE_MANAGEMENT/upload/NewUpload_5.py",
-        "line": 83,
-        "type": "NOTE",
-        "content": "# NOTE: The current value contains newlines and non-ASCII characters (emojis, curly quotes)."
       },
       {
         "file": "_versions/FILE_MANAGEMENT/upload/upload_8.py",
@@ -9741,18 +10257,6 @@
         "content": "# NOTE: The current value contains newlines and non-ASCII characters (emojis, curly quotes)."
       },
       {
-        "file": "Youtube/.history/NewUpload_20250607131039.py",
-        "line": 76,
-        "type": "NOTE",
-        "content": "# NOTE: The current value is wrapped in extra single quotes, which may cause a file not found error."
-      },
-      {
-        "file": "Youtube/.history/NewUpload_20250607131039.py",
-        "line": 83,
-        "type": "NOTE",
-        "content": "# NOTE: The current value contains newlines and non-ASCII characters (emojis, curly quotes)."
-      },
-      {
         "file": "python3.9/lib/python3.12/site-packages/pip/_internal/configuration.py",
         "line": 49,
         "type": "NOTE",
@@ -10491,43 +10995,79 @@
         "content": "vjMtZMhMNgf(rXXXVuV|p&iHFPVT1%>d!o9Ci?IuR%=swW)Px?WFYA<m-U}5KFQRU?=N6{r4^%1}Uj#"
       },
       {
-        "file": "dedup_backup/Users/steven/Documents/python/dedup_backup/Users/steven/Documents/python/simple_python_explorer.py",
+        "file": "dedup_backup_20251101_033200/_versions/FILE_MANAGEMENT/upload/NewUpload_15.py",
+        "line": 76,
+        "type": "NOTE",
+        "content": "# NOTE: The current value is wrapped in extra single quotes, which may cause a file not found error."
+      },
+      {
+        "file": "dedup_backup_20251101_033200/_versions/FILE_MANAGEMENT/upload/NewUpload_15.py",
+        "line": 83,
+        "type": "NOTE",
+        "content": "# NOTE: The current value contains newlines and non-ASCII characters (emojis, curly quotes)."
+      },
+      {
+        "file": "dedup_backup_20251101_033200/_versions/FILE_MANAGEMENT/upload/NewUpload_5.py",
+        "line": 76,
+        "type": "NOTE",
+        "content": "# NOTE: The current value is wrapped in extra single quotes, which may cause a file not found error."
+      },
+      {
+        "file": "dedup_backup_20251101_033200/_versions/FILE_MANAGEMENT/upload/NewUpload_5.py",
+        "line": 83,
+        "type": "NOTE",
+        "content": "# NOTE: The current value contains newlines and non-ASCII characters (emojis, curly quotes)."
+      },
+      {
+        "file": "dedup_backup_20251101_033200/Youtube/.history/NewUpload_20250607131039.py",
+        "line": 76,
+        "type": "NOTE",
+        "content": "# NOTE: The current value is wrapped in extra single quotes, which may cause a file not found error."
+      },
+      {
+        "file": "dedup_backup_20251101_033200/Youtube/.history/NewUpload_20250607131039.py",
+        "line": 83,
+        "type": "NOTE",
+        "content": "# NOTE: The current value contains newlines and non-ASCII characters (emojis, curly quotes)."
+      },
+      {
+        "file": "dedup_backup_20251101_033200/dedup_backup/Users/steven/Documents/python/dedup_backup/Users/steven/Documents/python/simple_python_explorer.py",
         "line": 1,
         "type": "TODO",
         "content": "# TODO: Resolve circular dependencies by restructuring imports"
       },
       {
-        "file": "dedup_backup/Users/steven/Documents/python/dedup_backup/Users/steven/Documents/python/simple_python_explorer.py",
+        "file": "dedup_backup_20251101_033200/dedup_backup/Users/steven/Documents/python/dedup_backup/Users/steven/Documents/python/simple_python_explorer.py",
         "line": 339,
         "type": "TODO",
         "content": "# TODO: Replace global variable with proper structure"
       },
       {
-        "file": "dedup_backup/Users/steven/Documents/python/dedup_backup/Users/steven/Documents/python/python_code_enhancer.py",
+        "file": "dedup_backup_20251101_033200/dedup_backup/Users/steven/Documents/python/dedup_backup/Users/steven/Documents/python/python_code_enhancer.py",
         "line": 143,
         "type": "TODO",
         "content": "# Remove TODO comments from imports"
       },
       {
-        "file": "dedup_backup/Users/steven/Documents/python/dedup_backup/Users/steven/Documents/python/python_code_enhancer.py",
+        "file": "dedup_backup_20251101_033200/dedup_backup/Users/steven/Documents/python/dedup_backup/Users/steven/Documents/python/python_code_enhancer.py",
         "line": 146,
         "type": "TODO",
         "content": "if not imp.strip().startswith('# TODO'):"
       },
       {
-        "file": "dedup_backup/Users/steven/Documents/python/dedup_backup/Users/steven/Documents/python/generate_code_gallery.py",
+        "file": "dedup_backup_20251101_033200/dedup_backup/Users/steven/Documents/python/dedup_backup/Users/steven/Documents/python/generate_code_gallery.py",
         "line": 1,
         "type": "TODO",
         "content": "# TODO: Resolve circular dependencies by restructuring imports"
       },
       {
-        "file": "dedup_backup/Users/steven/Documents/python/dedup_backup/Users/steven/Documents/python/generate_code_gallery.py",
+        "file": "dedup_backup_20251101_033200/dedup_backup/Users/steven/Documents/python/dedup_backup/Users/steven/Documents/python/generate_code_gallery.py",
         "line": 539,
         "type": "TODO",
         "content": "# TODO: Replace global variable with proper structure"
       },
       {
-        "file": "dedup_backup/Users/steven/Documents/python/dedup_backup/Users/steven/Documents/python/generate_code_gallery.py",
+        "file": "dedup_backup_20251101_033200/dedup_backup/Users/steven/Documents/python/dedup_backup/Users/steven/Documents/python/generate_code_gallery.py",
         "line": 746,
         "type": "TODO",
         "content": "# TODO: Consider breaking this function into smaller functions"
@@ -10538,43 +11078,43 @@
     "top_imports": [
       [
         "os",
-        2075
+        2208
       ],
       [
         "pip",
-        1281
+        1293
       ],
       [
         "typing",
-        867
+        915
       ],
       [
         "sys",
-        826
+        868
       ],
       [
         "pathlib",
-        742
+        835
       ],
       [
         "json",
-        645
+        722
       ],
       [
         "re",
-        594
+        664
       ],
       [
         "logging",
-        580
-      ],
-      [
-        "pandas",
-        563
+        635
       ],
       [
         "datetime",
-        551
+        616
+      ],
+      [
+        "pandas",
+        565
       ]
     ]
   }

@@ -40,13 +40,13 @@ class Colors:
 
 class FinalConsolidator:
     """Final consolidation of Python ecosystem"""
-    
+
     def __init__(self, master_dir: str, dry_run: bool = True):
         self.master_dir = Path(master_dir)
         self.dry_run = dry_run
-        
+
         self.temp_dir = Path("/Users/steven/Documents/python_final_consolidation_temp")
-        
+
         self.stats = {
             'archive_files_found': 0,
             'unique_files': 0,
@@ -54,10 +54,10 @@ class FinalConsolidator:
             'files_merged': 0,
             'docs_moved': 0,
         }
-        
+
         self.master_hashes = {}
         self.unique_files = []
-    
+
     def calc_hash(self, filepath: Path) -> str:
         """Calculate file hash"""
         try:
@@ -68,74 +68,74 @@ class FinalConsolidator:
             return hasher.hexdigest()
         except:
             return "ERROR"
-    
+
     def scan_master(self):
         """Build hash index of master directory"""
-        
+
         print(f"\n{Colors.CYAN}{Colors.BOLD}{'='*80}")
         print(f"🔍 SCANNING MASTER DIRECTORY")
         print(f"{'='*80}{Colors.END}\n")
-        
+
         print(f"{Colors.CYAN}Master: {self.master_dir}{Colors.END}")
-        
+
         py_files = list(self.master_dir.rglob("*.py"))
         py_files = [f for f in py_files if 'backup' not in str(f)]
-        
+
         print(f"{Colors.GREEN}Hashing {len(py_files)} files...{Colors.END}")
-        
+
         for idx, filepath in enumerate(py_files, 1):
             if idx % 500 == 0:
                 print(f"  Progress: {idx}/{len(py_files)}...", end='\r')
-            
+
             file_hash = self.calc_hash(filepath)
             if file_hash != "ERROR":
                 self.master_hashes[file_hash] = filepath
-        
+
         print(f"\n{Colors.GREEN}✅ Master indexed: {len(self.master_hashes):,} unique files{Colors.END}")
-    
+
     def check_archives_quick(self):
         """Quick check of archive contents without full extraction"""
-        
+
         print(f"\n{Colors.CYAN}{Colors.BOLD}{'='*80}")
         print(f"📦 CHECKING ARCHIVES (Quick Review)")
         print(f"{'='*80}{Colors.END}\n")
-        
+
         # Check python.zip
         zip1 = Path("/Users/steven/Documents/python.zip")
         if zip1.exists():
-            result = subprocess.run(['unzip', '-l', str(zip1)], 
+            result = subprocess.run(['unzip', '-l', str(zip1)],
                                   capture_output=True, text=True)
             py_count = result.stdout.count('.py\n')
             print(f"{Colors.CYAN}python.zip:{Colors.END}")
             print(f"  Estimated .py files: ~{py_count}")
             print(f"  Size: 4.6 GB")
             print(f"  {Colors.YELLOW}Recommendation: Keep as backup (too large, likely old){Colors.END}\n")
-        
+
         # Check python 2.zip
         zip2 = Path("/Users/steven/Documents/python 2.zip")
         if zip2.exists():
-            result = subprocess.run(['unzip', '-l', str(zip2)], 
+            result = subprocess.run(['unzip', '-l', str(zip2)],
                                   capture_output=True, text=True)
             py_count = result.stdout.count('.py\n')
             print(f"{Colors.CYAN}python 2.zip:{Colors.END}")
             print(f"  Estimated .py files: ~{py_count}")
             print(f"  Size: 1.5 GB")
             print(f"  {Colors.YELLOW}Recommendation: Extract to check for unique files{Colors.END}\n")
-    
+
     def move_docs_to_master(self):
         """Move documentation files into master"""
-        
+
         print(f"\n{Colors.CYAN}{Colors.BOLD}{'='*80}")
         print(f"📚 MOVING DOCUMENTATION")
         print(f"{'='*80}{Colors.END}\n")
-        
+
         docs_dir = self.master_dir / "docs" / "consolidation_reports"
-        
+
         doc_files = [
             "/Users/steven/Documents/PYTHON_CONSOLIDATION_COMPLETE.md",
             "/Users/steven/Documents/PYTHON_ECOSYSTEM_MASTER_PLAN.md",
         ]
-        
+
         for doc_path in doc_files:
             doc = Path(doc_path)
             if doc.exists():
@@ -145,15 +145,15 @@ class FinalConsolidator:
                     print(f"{Colors.GREEN}✅ Moved: {doc.name}{Colors.END}")
                 else:
                     print(f"{Colors.YELLOW}[DRY RUN] Would move: {doc.name}{Colors.END}")
-                
+
                 self.stats['docs_moved'] += 1
-    
+
     def generate_final_report(self):
         """Generate final consolidation report"""
-        
+
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         report_file = self.master_dir / f"FINAL_CONSOLIDATION_REPORT_{timestamp}.md"
-        
+
         with open(report_file, 'w') as f:
             f.write("# 🎊 FINAL PYTHON ECOSYSTEM CONSOLIDATION\n\n")
             f.write(f"**Date:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
@@ -164,13 +164,13 @@ class FinalConsolidator:
             f.write(f"- **Unique Files Merged:** {self.stats['unique_files']}\n")
             f.write(f"- **Duplicates Skipped:** {self.stats['duplicates_skipped']}\n")
             f.write(f"- **Docs Moved:** {self.stats['docs_moved']}\n\n")
-            
+
             f.write("### Status of Other Directories:\n\n")
             f.write("- `python_backup/` - **Can be archived/removed** (17/18 duplicates)\n")
             f.write("- `python-repo/` - **Can be removed** (empty)\n")
             f.write("- `python.zip` - **Keep as historical backup** (4.6 GB)\n")
             f.write("- `python 2.zip` - **Keep as secondary backup** (1.5 GB)\n\n")
-            
+
             f.write("### Cleanup Commands:\n\n")
             f.write("```bash\n")
             f.write("cd ~/Documents\n\n")
@@ -184,13 +184,13 @@ class FinalConsolidator:
             f.write("# - python.zip (backup)\n")
             f.write("# - python 2.zip (backup)\n")
             f.write("```\n")
-        
+
         print(f"{Colors.GREEN}✅ Final report: {report_file}{Colors.END}")
         return report_file
-    
+
     def run(self):
         """Run final consolidation"""
-        
+
         print(f"{Colors.MAGENTA}{Colors.BOLD}")
         print("╔═══════════════════════════════════════════════════════════════════════════════╗")
         print("║                                                                               ║")
@@ -200,35 +200,35 @@ class FinalConsolidator:
         print("║                                                                               ║")
         print("╚═══════════════════════════════════════════════════════════════════════════════╝")
         print(f"{Colors.END}\n")
-        
+
         print(f"{Colors.CYAN}Target Master: {self.master_dir}{Colors.END}\n")
-        
+
         # Scan master
         self.scan_master()
-        
+
         # Check archives (quick review)
         self.check_archives_quick()
-        
+
         # Move docs
         self.move_docs_to_master()
-        
+
         # Generate report
         self.generate_final_report()
-        
+
         # Final summary
         print(f"\n{Colors.CYAN}{Colors.BOLD}{'='*80}")
         print(f"🎊 CONSOLIDATION COMPLETE!")
         print(f"{'='*80}{Colors.END}\n")
-        
+
         print(f"{Colors.BOLD}📊 FINAL STATUS:{Colors.END}\n")
         print(f"  {Colors.GREEN}✅ Master directory: ~/Documents/python{Colors.END}")
         print(f"  {Colors.GREEN}✅ Files indexed: {len(self.master_hashes):,}{Colors.END}")
         print(f"  {Colors.GREEN}✅ Documentation moved: {self.stats['docs_moved']}{Colors.END}\n")
-        
+
         print(f"{Colors.BOLD}📦 Archives (Keep as Backups):{Colors.END}\n")
         print(f"  {Colors.CYAN}→ python.zip (4.6 GB){Colors.END}")
         print(f"  {Colors.CYAN}→ python 2.zip (1.5 GB){Colors.END}\n")
-        
+
         print(f"{Colors.BOLD}🗑️ Can Remove/Archive:{Colors.END}\n")
         print(f"  {Colors.YELLOW}→ python_backup/ (17/18 duplicates){Colors.END}")
         print(f"  {Colors.YELLOW}→ python-repo/ (empty){Colors.END}\n")
@@ -236,20 +236,19 @@ class FinalConsolidator:
 
 def main():
     import argparse
-    
+
     parser = argparse.ArgumentParser(description="🎯 Final consolidation")
-    parser.add_argument('--master', type=str, 
+    parser.add_argument('--master', type=str,
                        default="/Users/steven/Documents/python",
                        help='Master directory')
     parser.add_argument('--dry-run', action='store_true', default=True)
     parser.add_argument('--live', action='store_true')
-    
+
     args = parser.parse_args()
-    
+
     consolidator = FinalConsolidator(args.master, dry_run=not args.live)
     consolidator.run()
 
 
 if __name__ == "__main__":
     main()
-
