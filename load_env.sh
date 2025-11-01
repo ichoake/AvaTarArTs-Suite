@@ -34,4 +34,3 @@ echo "  • cd media/image     - Image processing tools"
 echo "  • cd automation/     - Automation & API integrations"
 echo "  • cd utilities/      - System utilities"
 echo ""
-

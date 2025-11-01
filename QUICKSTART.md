@@ -7,7 +7,7 @@ Get up and running in 5 minutes!
 ## ⚡ Prerequisites
 
 1. **Python 3.8+** installed
-2. **Git** installed  
+2. **Git** installed
 3. **API Keys** configured in `~/.env.d/`
 
 ---
@@ -98,7 +98,7 @@ python3 sorts.py --path ~/Documents --output duplicates_report.csv
 ```bash
 cd media/
 ls audio/     # 70+ audio scripts
-ls image/     # 300+ image scripts  
+ls image/     # 300+ image scripts
 ls video/     # 120+ video scripts
 ```
 
@@ -313,4 +313,3 @@ python3 script_name.py
 **Ready to build amazing things! 🚀**
 
 *Questions? Check the docs or review the example scripts in each directory.*
-

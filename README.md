@@ -10,7 +10,7 @@
 
 Leverage 98+ AI APIs to create, automate, and innovate across:
 - 🎨 **Creative Content** (Images, Audio, Video)
-- 🤖 **AI-Powered Analysis** 
+- 🤖 **AI-Powered Analysis**
 - ⚙️ **Automation & Workflows**
 - 🛠️ **Development Tools**
 - 📊 **Data Management**
@@ -247,7 +247,7 @@ python3 media/image/vanceai_upscale.py \
 source ~/.env.d/loader.sh
 
 # 1. Generate script with GPT-5
-# 2. Create voiceover with ElevenLabs  
+# 2. Create voiceover with ElevenLabs
 # 3. Generate images with Leonardo AI
 # 4. Create video with Runway ML
 # 5. Upload to Cloudflare R2
@@ -333,4 +333,3 @@ For issues or questions:
 ---
 
 🚀 **Happy Building!**
-
