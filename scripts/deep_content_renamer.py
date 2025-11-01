@@ -414,7 +414,7 @@ class DeepContentRenamer:
                             new_path = item['old_path'].parent / f"{base}-v{counter}.py"
 
                         # Backup
-                        backup_path = self.backup_dir / filepath.relative_to(self.target_dir)
+                        backup_path = self.backup_dir / item['old_path'].relative_to(self.target_dir)
                         backup_path.parent.mkdir(parents=True, exist_ok=True)
                         import shutil
                         shutil.copy2(item['old_path'], backup_path)
